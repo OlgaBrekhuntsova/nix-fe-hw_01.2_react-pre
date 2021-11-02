@@ -1,0 +1,143 @@
+@value svg-color-accent, title-dark-theme-color, accent-color, text-dark-theme-color, footer-bgc from "../../assets/utils/variables.module.css";
+
+.container {
+  background-color: footer-bgc;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.logo {
+  color: title-dark-theme-color;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: title-dark-theme-color;
+}
+
+.contact {
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .contact,
+  .social {
+    margin-bottom: 60px;
+  }
+}
+
+.contactLogo {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.contactAdressListItem:not(:last-child) {
+  margin-bottom: 8px;
+}
+.contactAdressListItemLink {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: text-dark-theme-color;
+  transition-property: color;
+  /* @include animation (); */
+}
+.contactAdressListItemLink:hover,
+.contactAdressListItemLink:focus {
+  color: accent-color;
+}
+
+.contactAdressListItemLink.map {
+  color: title-dark-theme-color;
+}
+.contactAdressListItemLink.map:hover,
+.contactAdressListItemLink.map:focus {
+  color: accent-color;
+}
+
+.socialListItemLinkBlock {
+  background-color: rgba(255, 255, 255, 0.1);
+  @media screen and (min-width: 1200px) {
+    .socialListItemLink:hover &,
+    .socialListItemLink:focus & {
+      background-color: svg-color-accent;
+    }
+  }
+}
+.socialListLinkIcons {
+  fill: title-dark-theme-color;
+}
+@media screen and (min-width: 768px) {
+  .footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  @media screen and (max-width: 1199px) {
+    .social {
+      margin-left: 165px;
+      margin-right: 13px;
+    }
+    .sign {
+      margin-left: 14px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    min-width: 1200px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: footer-bgc;
+  }
+  .title {
+    text-align: left;
+  }
+
+  .container {
+    justify-content: space-between;
+  }
+
+  .contact {
+    margin-right: 69px;
+  }
+
+  .contactAdressListItem:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .social {
+    margin-right: 94px;
+  }
+}
+.socialList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialListItem:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socialListLinkBlock {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  /* @include animation(); */
+}
+
+.socialListLinkIcons {
+  width: 20px;
+  height: 20px;
+  transition-property: fill;
+  /* @include animation(); */
+}

@@ -1,0 +1,92 @@
+.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: rectangle-background-color;
+}
+
+.subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  text-transform: none;
+}
+.description {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.listItem {
+  background-color: title-dark-theme-color;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.listItemPhoto {
+  display: block;
+  width: 100%;
+  min-width: 210px;
+  margin-bottom: 30px;
+}
+.listItemSocialList {
+  padding-bottom: 24px;
+}
+.socialListLinkBlock {
+  background-color: none;
+  @media screen and (min-width: 1200px) {
+    .listItem-social-list-link:hover &,
+    .listItem-social-list-link:focus & {
+      background-color: svg-color-accent;
+    }
+  }
+}
+
+.socialListLinkIcons {
+  fill: svg-color;
+  @media screen and (min-width: 1200px) {
+    .listItem-social-list-link:hover &,
+    .listItem-social-list-link:focus & {
+      fill: $title-dark-theme-color;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .listItem {
+    @media screen and (max-width: 1199px) {
+      &:nth-child(-n + 2) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    min-width: 1200px;
+    max-width: 1600px;
+    background-color: rectangle-background-color;
+  }
+  .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .listItem:not(:last-child) {
+    margin-right: 30px;
+  }
+}

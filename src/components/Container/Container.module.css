@@ -1,0 +1,15 @@
+@value accent-color, main-font from "../../assets/utils/variables.module.css";
+.bodyWrapper {
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    background-color: green;
+    /* background-color: #ffffff;
+     */
+  }
+}
+a:hover,
+a:focus {
+  color: accent-color;
+}
