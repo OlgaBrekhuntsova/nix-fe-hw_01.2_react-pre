@@ -1,0 +1,56 @@
+@value transition-function, transition-time, svg-color-accent, title-dark-theme-color, svg-color from "../../../assets/utils/variables.module.css";
+.socialList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialListItem:not(:last-child) {
+  margin-right: 10px;
+}
+
+.socialListLinkBlock {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition-property: background-color;
+  transition-duration: transition-time;
+  transition-timing-function: transition-function;
+  /* @include animation(); */
+}
+
+.socialListLinkIcons {
+  width: 20px;
+  height: 20px;
+  transition-property: fill;
+  transition-duration: transition-time;
+  transition-timing-function: transition-function;
+  /* @include animation(); */
+}
+
+.socialListLinkBlock[theme="lightTheme"] {
+  background-color: none;
+}
+.socialListLinkIcons[theme="lightTheme"] {
+  fill: svg-color;
+}
+.socialListLinkBlock[theme="darkTheme"] {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.socialListLinkIcons[theme="darkTheme"] {
+  fill: title-dark-theme-color;
+}
+
+@media screen and (min-width: 1200px) {
+  .listItemSocialListLink:hover .socialListLinkBlock,
+  .listItemSocialListLink:focus .socialListLinkBlock {
+    background-color: svg-color-accent;
+  }
+  .listItemSocialListLink:hover .socialListLinkIcons[theme="lightTheme"],
+  .listItemSocialListLink:focus .socialListLinkIcons[theme="lightTheme"] {
+    fill: title-dark-theme-color;
+  }
+}

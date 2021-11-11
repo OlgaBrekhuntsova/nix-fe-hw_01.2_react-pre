@@ -1,0 +1,4 @@
+[{"id":"01", "name":"inst", "label":"ссылка на инстагам", "icon":"./images/icons/sprite.svg#icon-instagram"},
+    {"id":"02", "name":"twit", "label":"ссылка на твиттер", "icon":"./images/icons/sprite.svg#icon-twitter"},
+    {"id":"03", "name":"fb", "label":"ссылка на фейсбук", "icon":"./images/icons/sprite.svg#icon-facebook"},
+    {"id":"04", "name":"lkn", "label":"ссылка на линкт-ин", "icon":"./images/icons/sprite.svg#icon-linkedin"}]

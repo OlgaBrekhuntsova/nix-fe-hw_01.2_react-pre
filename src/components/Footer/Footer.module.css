@@ -1,9 +1,17 @@
-@value svg-color-accent, title-dark-theme-color, accent-color, text-dark-theme-color, footer-bgc from "../../assets/utils/variables.module.css";
-
-.container {
+@value transition-time, transition-function, svg-color-accent, title-dark-theme-color, accent-color, text-dark-theme-color, footer-bgc from "../../assets/utils/variables.module.css";
+.footer {
+  margin-left: auto;
+  margin-right: auto;
   background-color: footer-bgc;
+}
+.container {
+  /* background-color: footer-bgc; */
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .logo {
   color: title-dark-theme-color;
@@ -23,12 +31,8 @@
 .contact {
   text-align: center;
 }
-
-@media screen and (max-width: 1199px) {
-  .contact,
-  .social {
-    margin-bottom: 60px;
-  }
+.map {
+  color: title-dark-theme-color;
 }
 
 .contactLogo {
@@ -43,6 +47,8 @@
   letter-spacing: 0.03em;
   color: text-dark-theme-color;
   transition-property: color;
+  transition-duration: transition-time;
+  transition-timing-function: transition-function;
   /* @include animation (); */
 }
 .contactAdressListItemLink:hover,
@@ -56,63 +62,6 @@
 .contactAdressListItemLink.map:hover,
 .contactAdressListItemLink.map:focus {
   color: accent-color;
-}
-
-.socialListItemLinkBlock {
-  background-color: rgba(255, 255, 255, 0.1);
-  @media screen and (min-width: 1200px) {
-    .socialListItemLink:hover &,
-    .socialListItemLink:focus & {
-      background-color: svg-color-accent;
-    }
-  }
-}
-.socialListLinkIcons {
-  fill: title-dark-theme-color;
-}
-@media screen and (min-width: 768px) {
-  .footer .container {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-    flex-wrap: wrap;
-  }
-  @media screen and (max-width: 1199px) {
-    .social {
-      margin-left: 165px;
-      margin-right: 13px;
-    }
-    .sign {
-      margin-left: 14px;
-    }
-  }
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    min-width: 1200px;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: footer-bgc;
-  }
-  .title {
-    text-align: left;
-  }
-
-  .container {
-    justify-content: space-between;
-  }
-
-  .contact {
-    margin-right: 69px;
-  }
-
-  .contactAdressListItem:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  .social {
-    margin-right: 94px;
-  }
 }
 .socialList {
   display: flex;
@@ -132,6 +81,8 @@
   align-items: center;
   justify-content: center;
   transition-property: background-color;
+  transition-duration: transition-time;
+  transition-timing-function: transition-function;
   /* @include animation(); */
 }
 
@@ -139,5 +90,68 @@
   width: 20px;
   height: 20px;
   transition-property: fill;
+  transition-duration: transition-time;
+  transition-timing-function: transition-function;
   /* @include animation(); */
+}
+@media screen and (max-width: 1199px) {
+  .contact,
+  .social {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .footer {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .social {
+      margin-left: 165px;
+      margin-right: 13px;
+    }
+    .sign {
+      margin-left: 14px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 100%;
+    min-width: 1200px;
+    max-width: 1600px;
+  }
+  .container {
+    justify-content: space-between;
+    width: 1200px;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+  .contact {
+    margin-right: 69px;
+  }
+
+  .contactAdressListItem:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  .social {
+    margin-right: 94px;
+  }
+  [btnatr="formSignBtn"] {
+    margin-left: 12px;
+  }
 }

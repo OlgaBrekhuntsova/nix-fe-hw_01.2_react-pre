@@ -5,17 +5,15 @@
   font-size: 24px;
   line-height: 1.167;
   letter-spacing: 0.03em;
-
+  padding-top: 16px;
+  padding-bottom: 16px;
+  color: title-light-theme-color;
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
   }
 }
-.logo {
-  padding-top: 16px;
-  padding-bottom: 16px;
-  color: title-light-theme-color;
-}
+
 .logoAccent {
   color: accent-color;
 }

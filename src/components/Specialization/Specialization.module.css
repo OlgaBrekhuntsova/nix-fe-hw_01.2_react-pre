@@ -1,0 +1,54 @@
+@value title-light-theme-color, title-dark-theme-color, background-dark-theme-color from "../../assets/utils/variables.module.css";
+
+.container {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: title-light-theme-color;
+}
+.subtitle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  color: title-dark-theme-color;
+  background-color: background-dark-theme-color;
+  transition-property: background-color;
+  /* @include animation(); */
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.listItem:not(:last-child) {
+  margin-right: 30px;
+}
+.listItemLink {
+  position: relative;
+}
+.listItemLink:hover .subtitle,
+.listItemLink:focus .subtitle {
+  background-color: rgba(33, 150, 243, 0.9);
+}
+@media screen and (max-width: 1199px) {
+  .specialization {
+    display: none;
+  }
+}

@@ -1,0 +1,4 @@
+[
+  { "id":"mail-1", "label": "info @devstudio.com", "link": "mailto:info@devstudio.com", "type":"mail", "image":"./images/icons/sprite.svg#icon-envelope"},
+  { "id":"mob-1", "label": " +38 096 111 11 11", "link": "tel:+380961111111", "type":"mob", "image":"./images/icons/sprite.svg#icon-smartphone"}
+]

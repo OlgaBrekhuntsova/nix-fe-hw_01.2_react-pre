@@ -1,0 +1,7 @@
+[{"id":"001", "altDescr":"переход на сайт компании я энд ко", "link":"./cust1", "logo":"./images/icons/sprite.svg#icon-customer-logo-1", "logoAtr":"logo1"},
+{"id":"002", "altDescr":"переход на сайт тэглайн хиэ кампани", "link":"./cust2", "logo":"./images/icons/sprite.svg#icon-customer-logo-2", "logoAtr":"logo2"},
+{"id":"003", "altDescr":"переход на сайт кампани", "link":"./cust3", "logo":"./images/icons/sprite.svg#icon-customer-logo-3", "logoAtr":"logo3"},
+{"id":"004", "altDescr":"переход на сайт компании фостер питерс", "link":"./cust4", "logo":"./images/icons/sprite.svg#icon-customer-logo-4", "logoAtr":"logo4"},
+{"id":"005", "altDescr":"переход на сайт компании брэнд", "link":"./cust5", "logo":"./images/icons/sprite.svg#icon-customer-logo-5", "logoAtr":"logo5"},
+{"id":"006", "altDescr":"переход на сайт тэг лайн кампани", "link":"./cust6", "logo":"./images/icons/sprite.svg#icon-customer-logo-6", "logoAtr":"logo6"}
+]

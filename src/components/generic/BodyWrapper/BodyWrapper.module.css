@@ -1,0 +1,16 @@
+@value accent-color, main-font, text-light-theme-color from "../../../assets/utils/variables.module.css";
+
+.bodyWrapper {
+  font-family: main-font;
+  color: text-light-theme-color;
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1600px;
+    background-color: #ffffff;
+  }
+}
+a:hover,
+a:focus {
+  color: accent-color;
+}

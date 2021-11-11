@@ -1,38 +1,42 @@
-.header-burger-close-icon {
+@value transition-function, transition-time, animation-base, burger-and-close-btn, svg-color-accent from "../../../assets/utils/variables.module.css";
+
+.burgerCloseIcon {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-.burger-btn {
+.burgerBtn {
   display: none;
-  @media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 767px) {
+  .burgerBtn {
     display: flex;
     background-color: transparent;
-
-    &.is-open {
-      .header-burger-icon {
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-      }
-      .header-burger-close-icon {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: visible;
-      }
-    }
+  }
+  .isOpen.burgerBtn .burgerIcon {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .isOpen.burgerBtn .burgerCloseIcon {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
   }
 }
 
-.header-burger-wrapper {
+.burgerWrapper {
   width: 40px;
   height: 40px;
-  fill: $burger-and-close-btn;
+  fill: burger-and-close-btn;
   transition-property: fill;
-  @include animation();
+  transition-duration: transition-time;
+  transition-timing-function: transition-function;
+  /* animation: animation-base; */
+  /* @include animation(); */
+}
 
-  .burger-btn:hover & {
-    fill: $svg-color-accent;
-  }
+.burgerWrapper .burgerBtn:hover {
+  fill: svg-color-accent;
 }

@@ -1,0 +1,5 @@
+[
+  { "id":"01", "name": "Десктопные приложения", "link":"", "label": "ссылка на портфолио десктопных приложений", "imgDesk1x":"./images/specialization/desktop-desktop-applications@1x.webp", "imgDesk2x":"./images/specialization/desktop-desktop-applications@2x.jpg", "imgAlt":"Ноутбук"},
+{ "id":"02", "name": "Мобильные приложения", "link":"", "label": "ссылка на портфолио мобильных приложений", "imgDesk1x":"./images/specialization/desktop-mobile-applications@1x.webp", "imgDesk2x":"./images/specialization/desktop-mobile-applications@2x.jpg 2x", "imgAlt":"Смартфон"},
+{ "id":"03", "name": "Дизайнерские решения", "link":"", "label": "ссылка на портфолио дизайна", "imgDesk1x":"./images/specialization/desktop-design-solutions@1x.webp", "imgDesk2x":"./images/specialization/desktop-design-solutions@2x.jpg 2x", "imgAlt":"Дизайн страницы сайта"}
+   ]

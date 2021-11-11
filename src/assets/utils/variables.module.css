@@ -17,3 +17,4 @@
 @value header-border-color: #ececec;
 @value body-bgc: #e5e5e5;
 @value footer-bgc: #2f303a;
+@value animation-base: 25000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;

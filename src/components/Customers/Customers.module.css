@@ -1,0 +1,101 @@
+/*CUSTOMERS SECTION*/
+@value svg-color, svg-color-accent, transition-function, transition-time from "../../assets/utils/variables.module.css";
+.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 767px) {
+  .listItem {
+    width: 46%;
+  }
+  .listItem:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+.listItemLinkBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90px;
+  border: 1px solid svg-color;
+  border-radius: 4px;
+  transition-property: border;
+  transition-duration: transition-time;
+  transition-timing-function: transition-function;
+  /* @include animation(); */
+}
+.listItemLink:hover .listItemLinkBlock,
+.listItemLink:focus-within .listItemLinkBlock {
+  border: 1px solid svg-color-accent;
+}
+.listItemLinkBlockIcon[logoatr="logo1"] {
+  width: 44px;
+  height: 49px;
+}
+.listItemLinkBlockIcon[logoatr="logo2"] {
+  width: 40px;
+  height: 52px;
+}
+.listItemLinkBlockIcon[logoatr="logo3"] {
+  width: 41px;
+  height: 43px;
+}
+.listItemLinkBlockIcon[logoatr="logo4"] {
+  width: 80px;
+  height: 42px;
+}
+.listItemLinkBlockIcon[logoatr="logo5"] {
+  width: 59px;
+  height: 47px;
+}
+.listItemLinkBlockIcon[logoatr="logo6"] {
+  width: 88px;
+  height: 45px;
+}
+
+.listItemLinkBlockIcon {
+  fill: svg-color;
+  transition-property: fill;
+  transition-duration: transition-time;
+  transition-timing-function: transition-function;
+  /* @include animation(); */
+}
+.listItemLink:hover .listItemLinkBlockIcon,
+.listItemLink:focus .listItemLinkBlockIcon {
+  fill: svg-color-accent;
+}
+
+@media screen and (min-width: 768px) {
+  @media screen and (max-width: 1199px) {
+    .listItem:not(:nth-last-child(-n + 3)) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .listItemLinkBlock {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .listItem:not(:last-child) {
+    margin-right: 30px;
+  }
+  .listItemLinkBlock {
+    width: 170px;
+  }
+}

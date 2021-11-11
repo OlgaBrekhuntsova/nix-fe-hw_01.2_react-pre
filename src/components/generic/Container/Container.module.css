@@ -1,0 +1,34 @@
+@value title-dark-theme-color from "../../../assets/utils/variables.module.css";
+.containerWrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: title-dark-theme-color;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: title-dark-theme-color;
+}
+
+@media screen and (min-width: 480px) {
+  .containerWrapper {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .containerWrapper {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .containerWrapper {
+    min-width: 1200px;
+    max-width: 1600px;
+    width: 100%;
+  }
+  .container {
+    width: 1200px;
+  }
+}

@@ -1,13 +1,13 @@
 import styles from "./Hero.module.css";
-  import HeroButton from "../generic/HeroButton/HeroButton";
+  import Button from "../generic/Button/Button";
 
-const HeroSection = ({ children }) => {
+const HeroSection = () => {
   return (<section className={styles.hero}>
     <div className={styles.container}>
       <h1 className={styles.title}>
         Эффективные решения для вашего бизнеса
       </h1>
-      <HeroButton/>
+      <Button label={'Заказать услугу'} type={"button"} modalOpen={true}/>
     </div>
   </section>)
 };

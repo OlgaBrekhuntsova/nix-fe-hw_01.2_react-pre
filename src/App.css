@@ -1,5 +1,4 @@
-@value title-light-theme-color from "/src/assets/utils/variables.module.css";
-:global(.title) {
+.title {
   margin-top: 0px;
   margin-bottom: 30px;
   font-weight: 700;
@@ -7,7 +6,6 @@
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
-  color: title-light-theme-color;
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
@@ -16,7 +14,7 @@
   }
 }
 
-:global(.subtitle) {
+.subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -24,7 +22,6 @@
   text-transform: uppercase;
   margin-bottom: 10px;
   margin-top: 0px;
-  color: title-light-theme-color;
 }
 
 /* 

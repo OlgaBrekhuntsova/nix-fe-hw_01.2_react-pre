@@ -1,0 +1,5 @@
+[
+  { "label": "Студия", "link": "./index.html", "current":true},
+  { "label": "Портфолио", "link": "./portfolio.html", "current":false},
+  { "label": "Контакты", "link": "./contacts.html", "current":false }
+]

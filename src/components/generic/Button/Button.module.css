@@ -1,0 +1,27 @@
+@value transition-function, transition-time, title-dark-theme-color, accent-color from "../../../assets/utils/variables.module.css";
+
+.modalBtn:hover,
+.modalBtn:focus {
+  background: #188ce8;
+}
+.modalBtn {
+  height: 50px;
+  width: 200px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: title-dark-theme-color;
+  background-color: accent-color;
+  transition-property: background;
+  transition-duration: transition-time;
+  transition-timing-function: transition-function;
+  /* @include animation(); */
+}
+
+.modalBtn:hover {
+  outline: none;
+}

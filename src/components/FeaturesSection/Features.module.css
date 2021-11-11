@@ -1,0 +1,67 @@
+@value rectangle-background-color, title-light-theme-color  from "../../assets/utils/variables.module.css";
+
+.container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.subtitle {
+  text-align: center;
+}
+.description {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.listItemBlock {
+  display: flex;
+  height: 120px;
+  border-radius: 4px;
+  background-color: rectangle-background-color;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.listItemBlockIcon {
+  width: 70px;
+  height: 70px;
+  fill: title-light-theme-color;
+}
+@media screen and (max-width: 767px) {
+  .listItem:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .listItem {
+    width: 354px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    .listItem:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+  .list {
+    flex-wrap: nowrap;
+  }
+  .listItem:not(:last-child) {
+    margin-right: 30px;
+  }
+}
