@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/nix-fe-hw_01.2_react-pre/npm/static/css/main.c29c6cab.chunk.css",
-    "main.js": "/nix-fe-hw_01.2_react-pre/npm/static/js/main.70a1064a.chunk.js",
-    "main.js.map": "/nix-fe-hw_01.2_react-pre/npm/static/js/main.70a1064a.chunk.js.map",
-    "runtime-main.js": "/nix-fe-hw_01.2_react-pre/npm/static/js/runtime-main.f4c5cf6a.js",
-    "runtime-main.js.map": "/nix-fe-hw_01.2_react-pre/npm/static/js/runtime-main.f4c5cf6a.js.map",
-    "static/js/2.3682b0df.chunk.js": "/nix-fe-hw_01.2_react-pre/npm/static/js/2.3682b0df.chunk.js",
-    "static/js/2.3682b0df.chunk.js.map": "/nix-fe-hw_01.2_react-pre/npm/static/js/2.3682b0df.chunk.js.map",
-    "index.html": "/nix-fe-hw_01.2_react-pre/npm/index.html",
-    "static/css/main.c29c6cab.chunk.css.map": "/nix-fe-hw_01.2_react-pre/npm/static/css/main.c29c6cab.chunk.css.map",
-    "static/js/2.3682b0df.chunk.js.LICENSE.txt": "/nix-fe-hw_01.2_react-pre/npm/static/js/2.3682b0df.chunk.js.LICENSE.txt",
-    "static/media/Hero.module.css": "/nix-fe-hw_01.2_react-pre/npm/static/media/tablet-hero-768.6f2bc9ff.jpg"
+    "main.css": "/nix-fe-hw_01.2_react-pre/static/css/main.b8a015a3.chunk.css",
+    "main.js": "/nix-fe-hw_01.2_react-pre/static/js/main.70a1064a.chunk.js",
+    "main.js.map": "/nix-fe-hw_01.2_react-pre/static/js/main.70a1064a.chunk.js.map",
+    "runtime-main.js": "/nix-fe-hw_01.2_react-pre/static/js/runtime-main.a852cb27.js",
+    "runtime-main.js.map": "/nix-fe-hw_01.2_react-pre/static/js/runtime-main.a852cb27.js.map",
+    "static/js/2.3682b0df.chunk.js": "/nix-fe-hw_01.2_react-pre/static/js/2.3682b0df.chunk.js",
+    "static/js/2.3682b0df.chunk.js.map": "/nix-fe-hw_01.2_react-pre/static/js/2.3682b0df.chunk.js.map",
+    "index.html": "/nix-fe-hw_01.2_react-pre/index.html",
+    "static/css/main.b8a015a3.chunk.css.map": "/nix-fe-hw_01.2_react-pre/static/css/main.b8a015a3.chunk.css.map",
+    "static/js/2.3682b0df.chunk.js.LICENSE.txt": "/nix-fe-hw_01.2_react-pre/static/js/2.3682b0df.chunk.js.LICENSE.txt",
+    "static/media/Hero.module.css": "/nix-fe-hw_01.2_react-pre/static/media/tablet-hero-768.6f2bc9ff.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f4c5cf6a.js",
+    "static/js/runtime-main.a852cb27.js",
     "static/js/2.3682b0df.chunk.js",
-    "static/css/main.c29c6cab.chunk.css",
+    "static/css/main.b8a015a3.chunk.css",
     "static/js/main.70a1064a.chunk.js"
   ]
 }
