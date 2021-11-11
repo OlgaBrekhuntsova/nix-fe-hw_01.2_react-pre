@@ -2,7 +2,7 @@
   "name": "nix-fe-hw_01.2_react-pre",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://olgabrekhuntsova.github.io/nix-fe-hw_01.2_react-pre/npm",
+  "homepage": "https://olgabrekhuntsova.github.io/nix-fe-hw_01.2_react-pre",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
- "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
