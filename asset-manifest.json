@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/nix-fe-hw_01.2_react-pre/static/css/main.b8a015a3.chunk.css",
-    "main.js": "/nix-fe-hw_01.2_react-pre/static/js/main.70a1064a.chunk.js",
-    "main.js.map": "/nix-fe-hw_01.2_react-pre/static/js/main.70a1064a.chunk.js.map",
+    "main.js": "/nix-fe-hw_01.2_react-pre/static/js/main.9bc888d6.chunk.js",
+    "main.js.map": "/nix-fe-hw_01.2_react-pre/static/js/main.9bc888d6.chunk.js.map",
     "runtime-main.js": "/nix-fe-hw_01.2_react-pre/static/js/runtime-main.a852cb27.js",
     "runtime-main.js.map": "/nix-fe-hw_01.2_react-pre/static/js/runtime-main.a852cb27.js.map",
     "static/js/2.3682b0df.chunk.js": "/nix-fe-hw_01.2_react-pre/static/js/2.3682b0df.chunk.js",
@@ -16,6 +16,6 @@
     "static/js/runtime-main.a852cb27.js",
     "static/js/2.3682b0df.chunk.js",
     "static/css/main.b8a015a3.chunk.css",
-    "static/js/main.70a1064a.chunk.js"
+    "static/js/main.9bc888d6.chunk.js"
   ]
 }
